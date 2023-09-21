@@ -67,13 +67,15 @@ main .speaker-view, main .maximize {
 }
 
 .container {
+    position: relative;
+    overflow-y: auto;
     width: 100%;
+    height: 90vh;
     margin: 0 auto;
 }
 
 .row {
     position: relative;
-    overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
