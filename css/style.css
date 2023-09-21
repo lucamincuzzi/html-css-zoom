@@ -79,11 +79,8 @@ main span {
 
 .col {
     width: calc(100% / 7 - 10rem / 7);
-    background-color: aquamarine;
     margin: .2rem;
     margin-bottom: .4rem;
-    /* Debug */
-    border: 1px solid white;
     min-width: 246px;
     min-height: 146px;
 }
