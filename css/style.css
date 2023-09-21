@@ -34,10 +34,13 @@ body {
     margin-bottom: .5rem;
 }
 
-.angle-up {
+.fa-angle-up {
+    position: absolute;
+    bottom: 30px;
     display: flex;
     align-items: center;
     font-size: .8rem;
+    padding-left: .5rem;
 }
 
 .action-text {
@@ -46,7 +49,7 @@ body {
 
 /* MAIN */
 
-main span {
+main .speaker-view, main .maximize {
     position: absolute;
     top: .5rem;
     z-index: 999;
@@ -78,11 +81,20 @@ main span {
 }
 
 .col {
+    position: relative;
     width: calc(100% / 7 - 10rem / 7);
     margin: .2rem;
     margin-bottom: .4rem;
     min-width: 246px;
     min-height: 146px;
+}
+
+.col span {
+    position: absolute;
+    bottom: 5px;
+    background-color: #4a4a4a91;
+    padding: .3rem;
+    font-size: .9rem;
 }
 
 /* FOOTER */
@@ -99,6 +111,7 @@ footer {
 }
 
 .footer-container {
+    position: relative;
     display: flex;
     padding: 1rem;
 }
@@ -111,6 +124,10 @@ footer .large {
 
 footer .action {
     margin-right: 2rem;
+}
+
+.fa-share-from-square {
+    color: #4bc800;
 }
 
 .footer-container.meeting {
